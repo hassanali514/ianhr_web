@@ -1,0 +1,99 @@
+.header {
+    position: fixed;
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    .hover-button {
+        background-image: linear-gradient(to right,
+                #54b3d6,
+                #54b3d6 50%,
+                #000 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hover-button:before {
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hover-button:hover {
+        background-position: 0;
+    }
+
+    .hover-button:hover::before {
+        width: 100%;
+    }
+
+    .contact-button{
+        background: #e7a141;
+        color: white;
+        border-radius: .2rem;
+
+        &:hover{
+            background: #e7a141;
+            color: white;
+        }
+    }
+}
+
+.social{
+    button{
+        border: none;
+        background: transparent;
+    }
+}
+
+.sector {
+    display: none;
+}
+
+.activeSector {
+    position: fixed;
+    display: inline-block;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+
+    .row {
+        position: relative;
+        top: 7vh;
+        background: wheat;
+        border-radius: .2rem;
+    }
+}
+
+.story {
+    display: none;
+}
+
+.activeStory {
+    position: fixed;
+    display: inline-block;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+
+    .story-content {
+        position: relative;
+        top: 6vh;
+        background: wheat;
+        border-radius: .2rem;
+    }
+}

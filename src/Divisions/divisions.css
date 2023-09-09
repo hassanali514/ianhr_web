@@ -1,0 +1,11 @@
+.divisions {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.slick-slider .slick-prev:before {
+  color: black !important;
+}
+.slick-slider .slick-next:before {
+  color: black !important;
+}/*# sourceMappingURL=divisions.css.map */

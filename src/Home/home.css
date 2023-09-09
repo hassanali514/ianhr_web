@@ -1,0 +1,46 @@
+.abc {
+  position: relative;
+}
+.abc .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  max-width: 100%;
+}
+.abc .carousel {
+  width: 100vw;
+  height: 100vh;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abc .carousel .carousel-item img {
+  max-width: 100%;
+  max-height: 100vh;
+  display: block;
+}
+.abc .carousel .carousel-control-next {
+  display: none;
+}
+.abc .carousel .carousel-control-prev {
+  display: none;
+}
+.abc .carousel .carouselImage {
+  position: relative;
+}
+.abc .carousel .carouselOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+}/*# sourceMappingURL=home.css.map */
